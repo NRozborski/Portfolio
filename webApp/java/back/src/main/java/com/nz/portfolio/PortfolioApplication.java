@@ -10,14 +10,7 @@ public class PortfolioApplication {
 
 	void main(String[] args) {
 		SpringApplication.run(PortfolioApplication.class, args);
-		gross();
 	}
 
-	public void gross(){
-		int asdf;
-		asdf= 1;
-	
-		System.out.print(asdf);
-	}
 
 }
