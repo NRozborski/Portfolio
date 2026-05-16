@@ -10,7 +10,6 @@ public class PortfolioApplication {
 
 	void main(String[] args) {
 		SpringApplication.run(PortfolioApplication.class, args);
-		gross();
 	}
 
 
