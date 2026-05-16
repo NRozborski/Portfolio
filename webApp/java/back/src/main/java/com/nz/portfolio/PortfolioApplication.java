@@ -13,11 +13,5 @@ public class PortfolioApplication {
 		gross();
 	}
 
-	public void gross(){
-		int asdf;
-		asdf= 1;
-	
-		System.out.print(asdf);
-	}
 
 }
