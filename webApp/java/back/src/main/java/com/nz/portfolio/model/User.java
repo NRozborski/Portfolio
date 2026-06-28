@@ -24,6 +24,14 @@ public class User implements UserDetails {
     @Column(unique = true)
     private String username;
     private String password;
+    @Column(unique = true)
+    private String email;
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         // TODO revise
@@ -32,4 +40,18 @@ public class User implements UserDetails {
         authorities.add(new SimpleGrantedAuthority("ROLE_USER"));
         return authorities;
     }
+
+
+
+    public User orElseGet(User user) {
+        User user1 = user; 
+        return user1;
+    }
+    public User orElseGet(Object user) {
+        User user1 = (User)user; 
+        return user1;
+    }
+
+
+
 }
